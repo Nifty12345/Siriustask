@@ -1,0 +1,217 @@
+.frame-container {
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  background: #B42A40;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.frontground{
+  background: url(./images/Pattern_min-02.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  margin: auto;
+  width: 98vw;
+  height: 96vh;
+}
+
+.cpLogo{
+  position: relative;
+  display: flex;
+}
+
+.left-c{
+  width: 35%;
+  margin-top: 18vh;
+  margin-left: 3vw;
+}
+
+.loginForm{
+  margin-top: 2.5vh;
+}
+
+p{
+  font-size: 18px; 
+  font-style: normal; 
+  font-weight: 500; 
+  line-height: 25px; 
+  color: #BEBEBE; 
+  font-family: 'Aeroport';
+  margin-bottom: 1vh;
+}
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-left: -0.15em;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container span{
+  margin-top: -0.3vh;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #5E5E5E;
+  border: 2px solid #1E1E1E;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #5E5E5E;
+  border: 2px solid #1E1E1E;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #B42A40;
+  border: 2px solid #1E1E1E;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.textBox, .textBox2{
+  margin-top: 1vh;
+  display: inline;
+  width: 15vw;
+  height: 5vh;
+  min-width: auto;
+  min-height: auto;
+  background: #1E1E1E;
+  border: 1px solid #FFFFFF;
+  font-family: 'Aeroport';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  border-radius: 5px;
+}
+
+.textBox2{
+  margin-left: 2vw;
+}
+
+.checkBoxes{
+  margin-top: 2vh;
+}
+
+label{
+  font-family: 'Aeroport';
+  font-style: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-left: 0.5vw;
+}
+
+.buttonsLogin{
+  margin-top: 2vh;
+}
+
+.loginBut, .regBut{
+  width: 15vw;
+  height: 7vh;
+  min-width: auto;
+  min-height: auto;
+  font-family: 'Squartiqa4F';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+}
+
+.regBut{
+  margin-left: 2vw;
+  background: transparent;
+  color: #B42A40;
+  border: 0.25vh solid #B42A40;
+}
+
+.regBut:hover{
+  background: #B42A40;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.loginBut{
+  background: #B42A40;
+  color: #FFFFFF;
+  border: 0.25vh solid #B42A40;
+}
+
+.loginBut:hover{
+  background: transparent;
+  color: #B42A40;
+  border: 0.25vh solid #B42A40;
+  border-radius: 10px;
+}
+
+.appAd{
+  margin-top: 3vh;
+  max-width: 32vw;
+}
+
+.lang{
+  margin-top: 2vh;
+}
+
+.langs{
+  display: inline-flex;
+}
